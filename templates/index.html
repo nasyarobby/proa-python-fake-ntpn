@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/static/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto w-96">
+        <div class="mx-5">
+            <h1 class="font-semibold text-xl mt-10">NTPN Generator</h1>
+            <p>Masukkan Kode Billing yang akan dibuat menjadi Dummy NTPN</p>
+            <div class="mt-2">
+                <textarea class="w-full border h-32 p-2" id="textarea"></textarea>
+            </div>
+            <div>
+                <button id="generateButton"
+                    class="px-4 py-3 uppercase w-full font-semibold text-white bg-sky-800 rounded">Generate</button>
+            </div>
+            <div id="resultContainer" class="hidden">
+                <h1 class="font-semibold text-xl mt-10">Hasil NTPN</h1>
+                <p>Dummy NTPN siap digunakan. Tekan tombol Copy untuk menyalin</p>
+                <div class="mt-2">
+                    <textarea class="w-full border h-32 p-2" id="result"></textarea>
+                </div>
+                <div>
+                    <button id="copyButton"
+                        class="px-4 py-3 uppercase w-full font-semibold text-white bg-emerald-500 rounded">Copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
